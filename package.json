@@ -1,0 +1,49 @@
+{
+	"name": "components_demos_react_ts_storybook",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "jiujue <jiujueismmp@qq.com>",
+	"license": "MIT",
+	"scripts": {
+		"start": "webpack serve --mode development --hot",
+		"build": "webpack --mode production",
+		"storybook": "storybook dev -p 6006",
+		"build-storybook": "storybook build"
+	},
+	"dependencies": {
+		"@babel/core": "^7.22.9",
+		"@babel/plugin-proposal-class-properties": "^7.18.6",
+		"@babel/preset-env": "^7.22.9",
+		"@babel/preset-react": "^7.22.5",
+		"@types/node": "^20.4.2",
+		"@types/react": "^18.2.14",
+		"@types/react-dom": "^18.2.7",
+		"@typescript-eslint/eslint-plugin": "^6.0.0",
+		"@typescript-eslint/parser": "^6.0.0",
+		"babel-loader": "^9.1.3",
+		"babel-preset-env": "^1.7.0",
+		"babel-preset-react": "^6.24.1",
+		"eslint": "^8.44.0",
+		"eslint-plugin-react": "^7.32.2",
+		"eslint-webpack-plugin": "^4.0.1",
+		"html-webpack-plugin": "^5.5.3",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"storybook": "^7.0.27",
+		"ts-loader": "^9.4.4",
+		"typescript": "^5.1.6",
+		"webpack": "^5.88.1",
+		"webpack-cli": "^5.1.4",
+		"webpack-dev-server": "^4.15.1"
+	},
+	"devDependencies": {
+		"@storybook/addon-essentials": "^7.0.27",
+		"@storybook/addon-interactions": "^7.0.27",
+		"@storybook/addon-links": "^7.0.27",
+		"@storybook/blocks": "^7.0.27",
+		"@storybook/react": "^7.0.27",
+		"@storybook/react-webpack5": "^7.0.27",
+		"@storybook/testing-library": "^0.0.14-next.2",
+		"eslint-plugin-storybook": "^0.6.12"
+	}
+}
