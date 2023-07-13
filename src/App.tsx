@@ -1,9 +1,9 @@
 import React from 'react';
-
+import  CustomCard from '@/components/CustomCard'
 function App() {
   return (
     <div >
-      <h1>App</h1>
+   <CustomCard />
     </div>
   );
 }
