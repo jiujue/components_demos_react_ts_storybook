@@ -1,5 +1,6 @@
 {
 	"name": "components_demos_react_ts_storybook",
+	"title": "components_demos",
 	"version": "1.0.0",
 	"main": "index.js",
 	"author": "jiujue <jiujueismmp@qq.com>",
