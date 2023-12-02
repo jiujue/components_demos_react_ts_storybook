@@ -1,5 +1,5 @@
-import React from 'react'
-import * as styles from './index.module.less'
+import React from 'react';
+import * as styles from './index.module.less';
 
 export type CustomFlowItemProps = {
   data:{
@@ -11,12 +11,10 @@ export type CustomFlowItemProps = {
   key:string
 }
 
-function CustomFlowItem({data}: CustomFlowItemProps) {
+function CustomFlowItem({ data }: CustomFlowItemProps) {
   return (
-    <div className={styles.customFlowItemWrap}>
-  
-    </div>
-  )
+    <div className={styles.customFlowItemWrap} />
+  );
 }
 
-export default CustomFlowItem
+export default CustomFlowItem;
