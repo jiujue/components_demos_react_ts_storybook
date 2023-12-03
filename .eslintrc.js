@@ -12,5 +12,6 @@ module.exports = {
   rules: {
     'linebreak-style': ['error', 'unix'],
     'react/jsx-filename-extension': 'off',
+    'react/require-default-props': 0,
   },
 };

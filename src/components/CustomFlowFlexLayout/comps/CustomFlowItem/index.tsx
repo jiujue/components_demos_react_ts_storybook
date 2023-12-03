@@ -1,4 +1,5 @@
 import React from 'react';
+import { Tooltip } from 'antd';
 import * as styles from './index.module.less';
 
 export type CustomFlowItemProps = {
@@ -7,20 +8,23 @@ export type CustomFlowItemProps = {
     avatar:string,
     title:string,
   },
-  key:string
+  key?:string
 }
 
-function CustomFlowItem({ data }: CustomFlowItemProps) {
+function CustomFlowItem({ data, key }: CustomFlowItemProps) {
   console.log(
     { data },
   );
   return (
-    <div className={styles.customFlowItemWrap}>
+    <div className={styles.customFlowItemWrap} key={key}>
 
       <div className="custom-flow-item-title">
-        {data?.title}
+        <Tooltip title={data?.title} placement="topLeft">
+          {data?.title}
+        </Tooltip>
+
       </div>
-      <div className={styles.customFlowItemAvatar}>
+      <div className="custom-flow-item-avatar">
         <img src={data?.avatar} alt="avatar" />
       </div>
     </div>

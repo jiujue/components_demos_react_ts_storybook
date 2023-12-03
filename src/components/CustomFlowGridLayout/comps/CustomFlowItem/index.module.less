@@ -1,0 +1,46 @@
+.custom-flow-item-wrap{
+  display: flex;
+  position: relative;
+  // border: 1px solid red;
+  min-width: 120px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+
+
+  &:last-child::after{
+    left: 0;
+    width: 50%;
+
+  }
+
+    &:first-child::after{
+    right: 0;
+    width: 50%;
+  }
+
+  &::after{
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(135deg, #c7e9fb, #a6defa, #80d4f9, #5bc9f8, #35bef7);
+    content: "";
+  }
+
+  :global .custom-flow-item-title{
+    color: red;
+  }
+
+  :global .custom-flow-item-avatar{
+    width: 64px;
+    height: 64px;
+
+    >img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
